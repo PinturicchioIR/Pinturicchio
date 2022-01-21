@@ -12,7 +12,8 @@ RUN apk add --no-cache --update --virtual .phpize-deps $PHPIZE_DEPS \
 	&& pecl install xdebug && docker-php-ext-enable xdebug \
     && docker-php-source delete \
 	&& apk del .phpize-deps
-
+#	add RUN apk add nodejs npm
+RUN apk add nodejs npm
 RUN echo -e "\e[32m > PHP modules\e[0m"
 RUN php -m
 
