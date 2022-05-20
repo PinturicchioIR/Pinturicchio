@@ -1,4 +1,4 @@
-FROM php:7.4-fpm-alpine
+FROM php:8.1-fpm-alpine
 
 RUN echo -e "\e[32m > Install core dependencies\e[0m"
 RUN apk add --no-cache --update bash curl freetype-dev libjpeg-turbo-dev libpng-dev
